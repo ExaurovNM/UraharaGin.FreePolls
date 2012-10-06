@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace UraharaGin.Core.DBEntities
 {
-    class Poll
+    public class Poll
     {
         public Guid Id { get; set; }
 

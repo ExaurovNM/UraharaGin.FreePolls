@@ -13,8 +13,4 @@ namespace UraharaGin.Core.DataAccess
 
         public IDbSet<RegisteredUser> RegisteredUsers { get; set; } 
     }
-
-    public class AnonymousUser
-    {
-    }
 }
