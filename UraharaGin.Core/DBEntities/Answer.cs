@@ -1,9 +1,9 @@
 
 
-namespace UraharaGin.Core.DBEntitys
-{
-    using System;
+using System;
 
+namespace UraharaGin.Core.DBEntities
+{
     public class Answer
     {
         public Guid Id { get; set; }
