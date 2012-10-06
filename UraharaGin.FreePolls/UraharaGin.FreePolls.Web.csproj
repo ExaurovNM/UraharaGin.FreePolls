@@ -84,6 +84,7 @@
     <Compile Include="NinjectModules\MainNinjectModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Security\AuthServices.cs" />
+    <Compile Include="Security\IAuthServices.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
@@ -157,9 +158,9 @@
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\UraharaGin.Core\UraharaGin.Core.csproj">
+    <ProjectReference Include="..\UraharaGin.Core\UraharaGin.FreePolls.Core.csproj">
       <Project>{E1E2CF27-8387-4FA3-BBEE-F02E83603F8D}</Project>
-      <Name>UraharaGin.Core</Name>
+      <Name>UraharaGin.FreePolls.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

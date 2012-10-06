@@ -1,24 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+using System;
 using UraharaGin.Core.DBEntities;
+using UraharaGin.Core.DataAccess;
 
 namespace UraharaGin.FreePolls.Security
 {
-    public interface  IAuthService
-    {
-        RegisteredUser GetAuthenticatedUser();
-
-        bool ValidateUser(string email, string password);
-
-        void LogOn(string email);
-
-        void LogOff();
-    }
-
     public class AuthServices : IAuthService
     {
+        private readonly IUserRepository userRepository;
+
+        public AuthServices(IUserRepository userRepository)
+        {
+            this.userRepository = userRepository;
+        }
+
         public RegisteredUser GetAuthenticatedUser()
         {
             throw new NotImplementedException();

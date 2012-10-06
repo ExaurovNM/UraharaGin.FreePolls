@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UraharaGin.Web", "UraharaGin.FreePolls\UraharaGin.Web.csproj", "{06A754BC-4634-4BE6-94FF-6BA80E8BD731}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UraharaGin.FreePolls.Web", "UraharaGin.FreePolls\UraharaGin.FreePolls.Web.csproj", "{06A754BC-4634-4BE6-94FF-6BA80E8BD731}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UraharaGin.Core", "UraharaGin.Core\UraharaGin.Core.csproj", "{E1E2CF27-8387-4FA3-BBEE-F02E83603F8D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UraharaGin.FreePolls.Core", "UraharaGin.Core\UraharaGin.FreePolls.Core.csproj", "{E1E2CF27-8387-4FA3-BBEE-F02E83603F8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UraharaGin.FreePolls.Common", "UraharaGin.FreePolls.Common\UraharaGin.FreePolls.Common.csproj", "{6A1834A5-E1D9-4C7A-8E8C-13CB2E9FA01C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,6 +21,10 @@ Global
 		{E1E2CF27-8387-4FA3-BBEE-F02E83603F8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1E2CF27-8387-4FA3-BBEE-F02E83603F8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1E2CF27-8387-4FA3-BBEE-F02E83603F8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A1834A5-E1D9-4C7A-8E8C-13CB2E9FA01C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A1834A5-E1D9-4C7A-8E8C-13CB2E9FA01C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A1834A5-E1D9-4C7A-8E8C-13CB2E9FA01C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A1834A5-E1D9-4C7A-8E8C-13CB2E9FA01C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
