@@ -3,7 +3,7 @@ using UraharaGin.Core.DBEntities;
 
 namespace UraharaGin.Core.DataAccess
 {
-    class DataBaseContext : DbContext
+    public class DataBaseContext : DbContext
     {
         public IDbSet<Poll> Polls { get; set; }
 

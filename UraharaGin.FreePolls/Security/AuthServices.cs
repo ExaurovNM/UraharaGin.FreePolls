@@ -7,10 +7,12 @@ namespace UraharaGin.FreePolls.Security
     public class AuthServices : IAuthService
     {
         private readonly IUserRepository userRepository;
+        private readonly IHashProvider hashProvider;
 
-        public AuthServices(IUserRepository userRepository)
+        public AuthServices(IUserRepository userRepository, IHashProvider hashProvider)
         {
             this.userRepository = userRepository;
+            this.hashProvider = hashProvider;
         }
 
         public RegisteredUser GetAuthenticatedUser()
@@ -18,9 +20,10 @@ namespace UraharaGin.FreePolls.Security
             throw new NotImplementedException();
         }
 
-        public bool ValidateUser(string email, string password)
+        public RegisteredUser ValidateUser(string email, string password)
         {
-            throw new NotImplementedException();
+            var hashedPassword = this.hashProvider.ComputePasswordHash(email, password);
+            return this.userRepository.GetUserByCredentials(email, hashedPassword);
         }
 
         public void LogOn(string email)
