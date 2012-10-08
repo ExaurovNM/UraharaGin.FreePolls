@@ -9,5 +9,7 @@ namespace UraharaGin.Core.DataAccess
     public interface IUserRepository
     {
         RegisteredUser GetUserByCredentials(string email, string hashedPassword);
+
+        RegisteredUser GetUserByEmail(string email);
     }
 }

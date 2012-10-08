@@ -11,7 +11,7 @@ namespace UraharaGin.FreePolls.Security
 
         RegisteredUser ValidateUser(string email, string password);
 
-        void LogOn(string email);
+        void LogOn(string email, bool remeberMe);
 
         void LogOff();
     }

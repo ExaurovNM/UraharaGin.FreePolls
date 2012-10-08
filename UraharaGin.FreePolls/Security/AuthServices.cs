@@ -4,6 +4,8 @@ using UraharaGin.Core.DataAccess;
 
 namespace UraharaGin.FreePolls.Security
 {
+    using System.Web.Security;
+
     public class AuthServices : IAuthService
     {
         private readonly IUserRepository userRepository;
@@ -26,14 +28,14 @@ namespace UraharaGin.FreePolls.Security
             return this.userRepository.GetUserByCredentials(email, hashedPassword);
         }
 
-        public void LogOn(string email)
+        public void LogOn(string email, bool remeberMe)
         {
-            throw new NotImplementedException();
+            FormsAuthentication.SetAuthCookie(email, remeberMe);
         }
 
         public void LogOff()
         {
-            throw new NotImplementedException();
+            FormsAuthentication.SignOut();
         }
     }
 }

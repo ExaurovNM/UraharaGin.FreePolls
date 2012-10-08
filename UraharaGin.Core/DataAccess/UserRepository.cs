@@ -21,5 +21,10 @@ namespace UraharaGin.Core.DataAccess
                                     x.Email.Equals(email, StringComparison.InvariantCultureIgnoreCase) &&
                                     x.PasswordHash == hashedPassword);
         }
+
+        public RegisteredUser GetUserByEmail(string email)
+        {
+            return this.dataBaseContext.RegisteredUsers.FirstOrDefault(x => x.Email == email.ToLower());
+        }
     }
 }

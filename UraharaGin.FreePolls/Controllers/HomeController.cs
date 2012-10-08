@@ -13,6 +13,5 @@ namespace UraharaGin.FreePolls.Controllers
         {
             return View();
         }
-
     }
 }
